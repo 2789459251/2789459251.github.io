@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Git操作合辑 | Zy_Blog</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link rel="stylesheet" href="//unpkg.com/@waline/client@v2/dist/waline.css"><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async src="//unpkg.com/valine/dist/Valine.min.js"></script><script async src="/js/gitalk.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async type="module">import { init } from '//unpkg.com/@waline/client@v2/dist/waline.mjs';
+window.waline = init;
+</script><script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
+  menuSettings: {
+    zoom: "None"
+  },
+  showMathMenu: false,
+  jax: ["input/TeX","output/CommonHTML"],
+  extensions: ["tex2jax.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+      autoNumber: "AMS"
+    }
+  },
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+  }
+});
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {new Valine({
+ el: '#valine'
+ , appId: ''
+ , appKey: '' , placeholder: 'This comment is sent by Penguin Logistics.'
+ , path: window.location.pathname
+});gitalk = new Gitalk({
+ clientID: '',
+ clientSecret: '',
+ repo: '',
+ owner: '',
+ admin: [],
+ distractionFreeMode: false,
+ id: location.pathname
+});
+if (document.querySelector("#gitalk")) gitalk.render("gitalk");if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: '',
+   path: window.location.pathname,
+ });document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/tags/"><span class="navItemTitle">Tags</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Git操作合辑</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-01-15T15:24:22.000Z" id="date"> 2024-01-15</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-01-15T16:05:16.261Z" id="updated"> 2024-01-16</time></div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="1-版本控制"><a href="#1-版本控制" class="headerlink" title="1.版本控制"></a>1.版本控制</h1><ul>
+<li>认知</li>
+</ul>
+<p>备份和记录</p>
+<ul>
+<li><p>演变过程：</p>
+</li>
+<li><p>本地版本控制系统（不利于合作开发）</p>
+</li>
+<li><p>集中化版本控制系统cvcs（服务器挂机就无法使用，硬盘坏了会丢失数据）—单点故障</p>
+</li>
+</ul>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/hFUnezFQCcTb8iuSHg3jYu/image.png?auth_key=1705332628-Q63wL3rSVeF7W1RsehNh7-0-bf4566242acd8728ce8c9dfa238bdb0c'><img src="https://secure2.wostatic.cn/static/hFUnezFQCcTb8iuSHg3jYu/image.png?auth_key=1705332628-Q63wL3rSVeF7W1RsehNh7-0-bf4566242acd8728ce8c9dfa238bdb0c"></p>
+<ul>
+<li>分布式版本控制系统dvcs（解决单点故障）</li>
+</ul>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/7k1AoKhCUig2xufsmWv9Dc/image.png?auth_key=1705332630-sA4QodiEHCiSqFpb14wZuz-0-6f33412c1465f31c105695429cb8dff8'><img src="https://secure2.wostatic.cn/static/7k1AoKhCUig2xufsmWv9Dc/image.png?auth_key=1705332630-sA4QodiEHCiSqFpb14wZuz-0-6f33412c1465f31c105695429cb8dff8"></p>
+<h1 id="2-安装"><a href="#2-安装" class="headerlink" title="2.安装"></a>2.安装</h1><p>已经安装了不在赘述，官网下载安装即可。</p>
+<ul>
+<li>配置：</li>
+</ul>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/2ydQSYfqnT6GKymgQ8M31K/image.png?auth_key=1705332629-4ydBHtCeELgqjfi4o7XNPr-0-740bc3b17e1ae8f9873234a590a6334a'><img src="https://secure2.wostatic.cn/static/2ydQSYfqnT6GKymgQ8M31K/image.png?auth_key=1705332629-4ydBHtCeELgqjfi4o7XNPr-0-740bc3b17e1ae8f9873234a590a6334a"></p>
+<ul>
+<li><p>git文件状态：</p>
+</li>
+<li><p>git的三个工作区域：</p>
+</li>
+</ul>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/pkXGZsnTnuZwoU26e49BvL/image.png?auth_key=1705332629-id3cUQedNFE8me53KGfKKj-0-0d7ed5edadaa99b83a75d38d8e6da43e'><img src="https://secure2.wostatic.cn/static/pkXGZsnTnuZwoU26e49BvL/image.png?auth_key=1705332629-id3cUQedNFE8me53KGfKKj-0-0d7ed5edadaa99b83a75d38d8e6da43e"></p>
+<ul>
+<li>git工作流程：</li>
+</ul>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/eoPJrcJK1ckVLhFEACsFju/image.png?auth_key=1705332630-4nAKaV2NcZ4fTJLLXmnDdm-0-7e064533620f161187e83ffd95660783'><img src="https://secure2.wostatic.cn/static/eoPJrcJK1ckVLhFEACsFju/image.png?auth_key=1705332630-4nAKaV2NcZ4fTJLLXmnDdm-0-7e064533620f161187e83ffd95660783"></p>
+<h1 id="3-创建版本库提交文件"><a href="#3-创建版本库提交文件" class="headerlink" title="3.创建版本库提交文件"></a>3.创建版本库提交文件</h1><ul>
+<li>git init</li>
+<li>git add 文件</li>
+<li>git commit -m “说明”</li>
+</ul>
+<p>但是遇到问题了：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/x8TksGjve44ibXoFYn18CA/image.png?auth_key=1705332630-8kfNtvUFqm3cawJse9vEMA-0-d7aef9aacb659973ad337deab175068d'><img src="https://secure2.wostatic.cn/static/x8TksGjve44ibXoFYn18CA/image.png?auth_key=1705332630-8kfNtvUFqm3cawJse9vEMA-0-d7aef9aacb659973ad337deab175068d"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/k72Nqynvxg6qmxBkg2ZDmg/image.png?auth_key=1705332632-gJUMcday2sKXBk2HvcxX5L-0-655f0b60e1de68907aa69e4575d5def0'><img src="https://secure2.wostatic.cn/static/k72Nqynvxg6qmxBkg2ZDmg/image.png?auth_key=1705332632-gJUMcday2sKXBk2HvcxX5L-0-655f0b60e1de68907aa69e4575d5def0"></p>
+<ul>
+<li>sudo nano .git&#x2F;config :</li>
+</ul>
+<p>[user]</p>
+<p>  name &#x3D; 2789459251</p>
+<p>  email &#x3D; “<a href="mailto:18291734409@stu.xupt.edu.cn">18291734409@stu.xupt.edu.cn</a>“</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/qLXTjLnFiNVWwTFdE5fzEe/image.png?auth_key=1705332630-jUTD2cqEkhgmidqY9GRH5b-0-67ece7da5a16fd27f2802d4ea94820c4'><img src="https://secure2.wostatic.cn/static/qLXTjLnFiNVWwTFdE5fzEe/image.png?auth_key=1705332630-jUTD2cqEkhgmidqY9GRH5b-0-67ece7da5a16fd27f2802d4ea94820c4"></p>
+<p>其他命令：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/oM743mdBkQjTBBMKQtBfo/image.png?auth_key=1705332630-hM7qrgyhyF9Z964bxtqFj2-0-dc778399c4b458b4b7dcf0bad87fe13d'><img src="https://secure2.wostatic.cn/static/oM743mdBkQjTBBMKQtBfo/image.png?auth_key=1705332630-hM7qrgyhyF9Z964bxtqFj2-0-dc778399c4b458b4b7dcf0bad87fe13d"></p>
+<p>git status：查看版本库状态</p>
+<p>git log：操作日志</p>
+<h1 id="4-时光穿梭"><a href="#4-时光穿梭" class="headerlink" title="4.时光穿梭"></a>4.时光穿梭</h1><h2 id="修改文件与文件提交"><a href="#修改文件与文件提交" class="headerlink" title="修改文件与文件提交"></a>修改文件与文件提交</h2><ul>
+<li>git add 文件</li>
+<li>git commit -m “说明”</li>
+<li>git reset HEAD:暂存区文件撤销操作</li>
+<li>git log -5 —pretty&#x3D;oneline log的简化输出指令</li>
+</ul>
+<h2 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h2><ul>
+<li><p>git reset - -hard HEAD^ 退回上个版本（回退几个版本就加几个^）</p>
+</li>
+<li><p>cat s：看工作目录的文件内容。 </p>
+</li>
+<li><p>git reset - - hard HEAD~[数字]：回退[数字]个版本。</p>
+</li>
+<li><p>到未来版本：</p>
+</li>
+<li><p>git reset –hard 83fad5ea8ff31208c4cef8909e809f8e039d3623</p>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/5BYaqboeey77NfLLC8fCbH">问题：到第三个版本后</a></p>
+<ul>
+<li>git log -5 —pretty&#x3D;oneline看不到版本4、5的id了</li>
+<li>git reflog &#x2F;&#x2F;可以看HEAD历史的指向变化</li>
+<li>再使用</li>
+<li>git reset - -hard id</li>
+</ul>
+<h2 id="文件删除"><a href="#文件删除" class="headerlink" title="文件删除"></a>文件删除</h2><p>在工作区删除不影响git仓库</p>
+<p>误删恢复：git checkout - - 文件名</p>
+<p>从本地仓库拷贝到工作区</p>
+<p>从本地仓库和工作区删除：git rm  文件名</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/iryeNMEFfAewTYyKa2bkNV/image.png?auth_key=1705332629-m536YJnSVtRmtQ4s53xij2-0-4a1837a22d43f255097a1e6fcd528b48'><img src="https://secure2.wostatic.cn/static/iryeNMEFfAewTYyKa2bkNV/image.png?auth_key=1705332629-m536YJnSVtRmtQ4s53xij2-0-4a1837a22d43f255097a1e6fcd528b48"></p>
+<p>但还是可以通过版本回退来恢复。</p>
+<h1 id="5-远程仓库"><a href="#5-远程仓库" class="headerlink" title="5.远程仓库"></a>5.远程仓库</h1><p>github,码云等，代码托管平台。</p>
+<h2 id="1-克隆"><a href="#1-克隆" class="headerlink" title="1.克隆"></a>1.克隆</h2><p>git clone网址</p>
+<h2 id="2-推送"><a href="#2-推送" class="headerlink" title="2.推送"></a>2.推送</h2><p class='item-img' data-src='https://secure2.wostatic.cn/static/d4F7CfsC6wdonHb9vVeXF1/image.png?auth_key=1705332630-2z4Uv39nm8rFb94Bijuo6v-0-67845fe85c7b078eb2918fad0c16a997'><img src="https://secure2.wostatic.cn/static/d4F7CfsC6wdonHb9vVeXF1/image.png?auth_key=1705332630-2z4Uv39nm8rFb94Bijuo6v-0-67845fe85c7b078eb2918fad0c16a997"></p>
+<p>https与ssh(加密推送)</p>
+<p>公钥秘钥生成命令：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/o85KKPJ8AFjvw7dvqd5DPu/image.png?auth_key=1705332629-ddDw2H3tHJPKrNTUz7mfUY-0-b1c51a8e244df6aee44fe0e77f985a67'><img src="https://secure2.wostatic.cn/static/o85KKPJ8AFjvw7dvqd5DPu/image.png?auth_key=1705332629-ddDw2H3tHJPKrNTUz7mfUY-0-b1c51a8e244df6aee44fe0e77f985a67"></p>
+<p>然后再在对应目录找到公钥，添加到github账户。</p>
+<p>检查连接：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/wB7KXXB4dXXBAcq5H9iKHX/image.png?auth_key=1705332631-5LSG295KcuKki7SydBAQMV-0-9885f800d467e49ab60d45f741f97f91'><img src="https://secure2.wostatic.cn/static/wB7KXXB4dXXBAcq5H9iKHX/image.png?auth_key=1705332631-5LSG295KcuKki7SydBAQMV-0-9885f800d467e49ab60d45f741f97f91"></p>
+<p>我遇到了权限问题！！！</p>
+<p>解决方法 ：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/5HLCLRZRPhp8Q9bB39yVVP/image.png?auth_key=1705332629-3NuXLU5LCMJMhrApeZVaKs-0-4c2ec83d133819dfcce5443516b1a938'><img src="https://secure2.wostatic.cn/static/5HLCLRZRPhp8Q9bB39yVVP/image.png?auth_key=1705332629-3NuXLU5LCMJMhrApeZVaKs-0-4c2ec83d133819dfcce5443516b1a938"></p>
+<p>操作：sudo git remote add origin <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a>:2789459251&#x2F;gitsshtext.git </p>
+<pre><code>      sudo -E git push -u origin master
+</code></pre>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/fkGmpryLeNiF8iMQD5KPjn/image.png?auth_key=1705332630-n9VwwRXXPv6VcBt8jbSNJr-0-1b1b492f2549674c92a734e6039a4fd4'><img src="https://secure2.wostatic.cn/static/fkGmpryLeNiF8iMQD5KPjn/image.png?auth_key=1705332630-n9VwwRXXPv6VcBt8jbSNJr-0-1b1b492f2549674c92a734e6039a4fd4"></p>
+<h1 id="6-分支"><a href="#6-分支" class="headerlink" title="6.分支"></a>6.分支</h1><h2 id="本地操作"><a href="#本地操作" class="headerlink" title="本地操作"></a>本地操作</h2><p>本地分支指令如下：</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/FRMojyrtKABQSwBb9wJmN/image.png?auth_key=1705332630-bwMVFFecPYf3biexneZVg8-0-e73fbc5aae695f697a325bee0a295a7a'><img src="https://secure2.wostatic.cn/static/FRMojyrtKABQSwBb9wJmN/image.png?auth_key=1705332630-bwMVFFecPYf3biexneZVg8-0-e73fbc5aae695f697a325bee0a295a7a"></p>
+<h2 id="远程操作："><a href="#远程操作：" class="headerlink" title="远程操作："></a>远程操作：</h2><p>push和pull</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/8bCpQeREexwVdEb6QocY5A/image.png?auth_key=1705332629-eMKRP7LBuothM72qfmvXtb-0-65e80a8a92a2407127c90e52c9bdf18a'><img src="https://secure2.wostatic.cn/static/8bCpQeREexwVdEb6QocY5A/image.png?auth_key=1705332629-eMKRP7LBuothM72qfmvXtb-0-65e80a8a92a2407127c90e52c9bdf18a"></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>分支操作冲突出现与解决：</p>
+<p>开发中对不同分支下同一文件进行修改后执行合并会出现文件修改冲突</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/ub6JbMbvKuwuq4S2UUEVYM/image.png?auth_key=1705332631-3cZeR1YEsomZt9DMPrJkyh-0-da7ae9ae7c3b232a36d08e4fed5f6ee4'><img src="https://secure2.wostatic.cn/static/ub6JbMbvKuwuq4S2UUEVYM/image.png?auth_key=1705332631-3cZeR1YEsomZt9DMPrJkyh-0-da7ae9ae7c3b232a36d08e4fed5f6ee4"></p>
+<p>手动修改就行；</p>
+<h3 id="远程分支冲突："><a href="#远程分支冲突：" class="headerlink" title="远程分支冲突："></a>远程分支冲突：</h3><p>git pull</p>
+<p>先拉取再推送；（就可以避免很多冲突）</p>
+<p>依旧需要手动修改。</p>
+<ul>
+<li><input disabled="" type="checkbox"> 拉取，修改，添加，提交，推送。</li>
+</ul>
+<h1 id="7-标签管理"><a href="#7-标签管理" class="headerlink" title="7.标签管理"></a>7.标签管理</h1><p>相当于：正式发行版本</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/oF7CMrzd2S77PyVFHkWpUQ/image.png?auth_key=1705332631-qGZ3cjAQeEqbsXKT6F2Rht-0-1f68e1492d27cf0a20f93e5189a0110d'><img src="https://secure2.wostatic.cn/static/oF7CMrzd2S77PyVFHkWpUQ/image.png?auth_key=1705332631-qGZ3cjAQeEqbsXKT6F2Rht-0-1f68e1492d27cf0a20f93e5189a0110d"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/fV5dzJJ4sTbVQtK4j1UgAf/image.png?auth_key=1705332631-gwzD5GsjbyqhrMw3arxxAc-0-f1b04766801697985549d517f69951e3'><img src="https://secure2.wostatic.cn/static/fV5dzJJ4sTbVQtK4j1UgAf/image.png?auth_key=1705332631-gwzD5GsjbyqhrMw3arxxAc-0-f1b04766801697985549d517f69951e3"></p>
+<p>重要的命令：git pull ssh地址 分支名</p>
+<p>将数据down下来</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2024/01/15/kafka%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/">← Next kafka消息队列</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/01/15/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务 Prev →</a></div></div></div><div id="comments"><div class="selector"><button class="valine-sel"></button><button class="gitalk-sel"></button><button class="waline-sel"></button></div><div id="valine"></div><div id="gitalk"></div><div id="waline"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Zy</a></h1><div id="description"><p>心有所向，无问东西</p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/2789459251"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/660370161?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">1.</span> <span class="toc-text">1.版本控制</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">2.安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93%E6%8F%90%E4%BA%A4%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">3.创建版本库提交文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%97%B6%E5%85%89%E7%A9%BF%E6%A2%AD"><span class="toc-number">4.</span> <span class="toc-text">4.时光穿梭</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E4%B8%8E%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4"><span class="toc-number">4.1.</span> <span class="toc-text">修改文件与文件提交</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80"><span class="toc-number">4.2.</span> <span class="toc-text">版本回退</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4"><span class="toc-number">4.3.</span> <span class="toc-text">文件删除</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">5.</span> <span class="toc-text">5.远程仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%85%8B%E9%9A%86"><span class="toc-number">5.1.</span> <span class="toc-text">1.克隆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%8E%A8%E9%80%81"><span class="toc-number">5.2.</span> <span class="toc-text">2.推送</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E5%88%86%E6%94%AF"><span class="toc-number">6.</span> <span class="toc-text">6.分支</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%93%8D%E4%BD%9C"><span class="toc-number">6.1.</span> <span class="toc-text">本地操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="toc-number">6.2.</span> <span class="toc-text">远程操作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.3.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E5%86%B2%E7%AA%81%EF%BC%9A"><span class="toc-number">6.3.1.</span> <span class="toc-text">远程分支冲突：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86"><span class="toc-number">7.</span> <span class="toc-text">7.标签管理</span></a></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main></body></html>

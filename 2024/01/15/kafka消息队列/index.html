@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>kafka消息队列 | Zy_Blog</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link rel="stylesheet" href="//unpkg.com/@waline/client@v2/dist/waline.css"><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async src="//unpkg.com/valine/dist/Valine.min.js"></script><script async src="/js/gitalk.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async type="module">import { init } from '//unpkg.com/@waline/client@v2/dist/waline.mjs';
+window.waline = init;
+</script><script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
+  menuSettings: {
+    zoom: "None"
+  },
+  showMathMenu: false,
+  jax: ["input/TeX","output/CommonHTML"],
+  extensions: ["tex2jax.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+      autoNumber: "AMS"
+    }
+  },
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+  }
+});
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {new Valine({
+ el: '#valine'
+ , appId: ''
+ , appKey: '' , placeholder: 'This comment is sent by Penguin Logistics.'
+ , path: window.location.pathname
+});gitalk = new Gitalk({
+ clientID: '',
+ clientSecret: '',
+ repo: '',
+ owner: '',
+ admin: [],
+ distractionFreeMode: false,
+ id: location.pathname
+});
+if (document.querySelector("#gitalk")) gitalk.render("gitalk");if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: '',
+   path: window.location.pathname,
+ });document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/tags/"><span class="navItemTitle">Tags</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>kafka消息队列</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-01-15T15:24:55.000Z" id="date"> 2024-01-15</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-01-15T16:05:34.088Z" id="updated"> 2024-01-16</time></div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="一、入门kafka"><a href="#一、入门kafka" class="headerlink" title="一、入门kafka"></a>一、入门kafka</h1><p class='item-img' data-src='https://secure2.wostatic.cn/static/txNjUMY3wrXzj4Qx3qs5nk/image.png?auth_key=1705333203-hPngczpjHF5wqpbhd6CSh2-0-43c22ac16d58f736fa2bdb7ddab7c8ce'><img src="https://secure2.wostatic.cn/static/txNjUMY3wrXzj4Qx3qs5nk/image.png?auth_key=1705333203-hPngczpjHF5wqpbhd6CSh2-0-43c22ac16d58f736fa2bdb7ddab7c8ce"></p>
+<h3 id="传统定义"><a href="#传统定义" class="headerlink" title="传统定义"></a>传统定义</h3><p>分布式的基于发布的&#x2F;订阅模式的消息队列</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/dR3MGizo4hmocNGYe7sR5U/image.png?auth_key=1705333203-Zabyv8YQRTEEBcN7FCbjQ-0-9eb27a31c6d373c3298fe11639008cd5'><img src="https://secure2.wostatic.cn/static/dR3MGizo4hmocNGYe7sR5U/image.png?auth_key=1705333203-Zabyv8YQRTEEBcN7FCbjQ-0-9eb27a31c6d373c3298fe11639008cd5"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/7yhWYRUaHXUqnenJQNP65v/image.png?auth_key=1705333203-tPGLi8L82v2FuCRzSqMggZ-0-7445a17e3e74eaf6fc941ad5b9748b0b'><img src="https://secure2.wostatic.cn/static/7yhWYRUaHXUqnenJQNP65v/image.png?auth_key=1705333203-tPGLi8L82v2FuCRzSqMggZ-0-7445a17e3e74eaf6fc941ad5b9748b0b"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/rG4T91wUj2zfu7p5ZFiFnv/image.png?auth_key=1705333203-qkeCrBoavQaZLAbFNZXgBt-0-e6985a13e149d06467395b2d6689a5af'><img src="https://secure2.wostatic.cn/static/rG4T91wUj2zfu7p5ZFiFnv/image.png?auth_key=1705333203-qkeCrBoavQaZLAbFNZXgBt-0-e6985a13e149d06467395b2d6689a5af"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/nG7xubJhyhM6oaLSVC7Fja/image.png?auth_key=1705333203-sM9esbxihjQnGYCGtVcMmf-0-687f44dccdeb3c7e8dbb5768ec72964d'><img src="https://secure2.wostatic.cn/static/nG7xubJhyhM6oaLSVC7Fja/image.png?auth_key=1705333203-sM9esbxihjQnGYCGtVcMmf-0-687f44dccdeb3c7e8dbb5768ec72964d"></p>
+<p>go操作kafka,导包，上网搜。</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/mK4oNoz3cZB5qAZN5sGWDr/image.png?auth_key=1705333203-juXxwckgNZTQFUnSGoYqDw-0-b7d33d9ded9acf275a23140488d64d7d'><img src="https://secure2.wostatic.cn/static/mK4oNoz3cZB5qAZN5sGWDr/image.png?auth_key=1705333203-juXxwckgNZTQFUnSGoYqDw-0-b7d33d9ded9acf275a23140488d64d7d"></p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/dmozJ8sGTqWMiTKKmarL6M/image.png?auth_key=1705333203-tGLcnp1njVZ83cryPzWKso-0-64df67538082c69b30f524b06c1ed4db'><img src="https://secure2.wostatic.cn/static/dmozJ8sGTqWMiTKKmarL6M/image.png?auth_key=1705333203-tGLcnp1njVZ83cryPzWKso-0-64df67538082c69b30f524b06c1ed4db"></p>
+<p>分区：config.Producer.Partition &#x3D; sarama.NewHashPartitioner</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/ewP55nPXQ1GbRhVSRHFN2N/image.png?auth_key=1705333203-mehpa9Ddf4C4boujxT2zrH-0-95f629c4c12d302c58f57b5037eca2ce'><img src="https://secure2.wostatic.cn/static/ewP55nPXQ1GbRhVSRHFN2N/image.png?auth_key=1705333203-mehpa9Ddf4C4boujxT2zrH-0-95f629c4c12d302c58f57b5037eca2ce"></p>
+<p>config.Consumer.partationner</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2024/01/15/Docker%E6%93%8D%E4%BD%9C/">← Next Docker操作</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/01/15/Git%E6%93%8D%E4%BD%9C%E5%90%88%E8%BE%91/">Git操作合辑 Prev →</a></div></div></div><div id="comments"><div class="selector"><button class="valine-sel"></button><button class="gitalk-sel"></button><button class="waline-sel"></button></div><div id="valine"></div><div id="gitalk"></div><div id="waline"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Zy</a></h1><div id="description"><p>心有所向，无问东西</p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/2789459251"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/660370161?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%85%A5%E9%97%A8kafka"><span class="toc-number">1.</span> <span class="toc-text">一、入门kafka</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E7%BB%9F%E5%AE%9A%E4%B9%89"><span class="toc-number">1.0.1.</span> <span class="toc-text">传统定义</span></a></li></ol></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main></body></html>

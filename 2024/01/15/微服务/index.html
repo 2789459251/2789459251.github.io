@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>微服务 | Zy_Blog</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link rel="stylesheet" href="//unpkg.com/@waline/client@v2/dist/waline.css"><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async src="//unpkg.com/valine/dist/Valine.min.js"></script><script async src="/js/gitalk.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async type="module">import { init } from '//unpkg.com/@waline/client@v2/dist/waline.mjs';
+window.waline = init;
+</script><script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
+  menuSettings: {
+    zoom: "None"
+  },
+  showMathMenu: false,
+  jax: ["input/TeX","output/CommonHTML"],
+  extensions: ["tex2jax.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+      autoNumber: "AMS"
+    }
+  },
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+  }
+});
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {new Valine({
+ el: '#valine'
+ , appId: ''
+ , appKey: '' , placeholder: 'This comment is sent by Penguin Logistics.'
+ , path: window.location.pathname
+});gitalk = new Gitalk({
+ clientID: '',
+ clientSecret: '',
+ repo: '',
+ owner: '',
+ admin: [],
+ distractionFreeMode: false,
+ id: location.pathname
+});
+if (document.querySelector("#gitalk")) gitalk.render("gitalk");if (document.querySelector('#waline'))
+ waline({
+   el: '#waline',
+   dark: ':root[theme-mode="dark"]',
+   serverURL: '',
+   path: window.location.pathname,
+ });document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem"><a class="navBlock" href="/tags/"><span class="navItemTitle">Tags</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>微服务</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-01-15T13:46:00.000Z" id="date"> 2024-01-15</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-01-15T13:46:49.905Z" id="updated"> 2024-01-15</time></div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="grpc"><a href="#grpc" class="headerlink" title="grpc"></a>grpc</h1><h2 id="proto约束文件介绍"><a href="#proto约束文件介绍" class="headerlink" title="proto约束文件介绍"></a>proto约束文件介绍</h2><p>命令</p>
+<h3 id="message关键字"><a href="#message关键字" class="headerlink" title="message关键字"></a>message关键字</h3><p>相当于golang里的结构体</p>
+<ul>
+<li><input disabled="" type="checkbox"> 字段规则</li>
+</ul>
+<p>repeated:代表切片等可重复类型</p>
+<p>options：其他默认是options</p>
+<ul>
+<li><input disabled="" type="checkbox"> 消息号</li>
+</ul>
+<p>message中每个字段必须有一个唯一标识号</p>
+<h3 id="服务定义"><a href="#服务定义" class="headerlink" title="服务定义"></a>服务定义</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs SQL">`rpc 服务函数名()<span class="hljs-keyword">returns</span>()`<br></code></pre></td></tr></table></figure>
+
+<h2 id="服务端编写"><a href="#服务端编写" class="headerlink" title="服务端编写"></a>服务端编写</h2><ul>
+<li><input disabled="" type="checkbox"> 写服务端实际的服务逻辑</li>
+<li><input disabled="" type="checkbox"> 创建grpcserver对象→server端的抽象对象</li>
+<li><input disabled="" type="checkbox"> 将编写的服务注册到grpcserver中</li>
+<li><input disabled="" type="checkbox"> 创建listen，grpcserver启动服务，listen监听server端口</li>
+</ul>
+<h2 id="客户端编写"><a href="#客户端编写" class="headerlink" title="客户端编写"></a>客户端编写</h2><ul>
+<li><input disabled="" type="checkbox"> grpc连接到server端，加密认证</li>
+<li><input disabled="" type="checkbox"> 获得与server端连接的客户端</li>
+<li><input disabled="" type="checkbox"> 客户端执行rpc调用</li>
+</ul>
+<h2 id="认证-安全传输"><a href="#认证-安全传输" class="headerlink" title="认证-安全传输"></a>认证-安全传输</h2><p>多个server与client之间的认证</p>
+<ul>
+<li>SSL&#x2F;TSL认证</li>
+<li>Token认证</li>
+<li>不安全连接</li>
+<li>自定义身份认证</li>
+</ul>
+<p>加入证书，实现安全调用</p>
+<p><a target="_blank" rel="noopener" href="https://www.kuangstudy.com/bbs/1604044550878703617">https://www.kuangstudy.com/bbs/1604044550878703617</a></p>
+<p>认证方式</p>
+<h4 id="SSL-TLS认证"><a href="#SSL-TLS认证" class="headerlink" title="SSL&#x2F;TLS认证"></a>SSL&#x2F;TLS认证</h4><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs text">命令：<br>生成私钥<br>openssl genrsa -out server.key 2048<br>生成证书<br>openssl req -new -x509 -key server.key -out server.crt -days 36500(有效期)<br>生成证书签名请求文件<br>openssl req -new -key server.key -out server.csr<br><br>修改配置文件<br>    cp openssl.cnf key<br>    copy_extensions = copy<br>    req_extensions = v3_req # The extensions to add to a certificate request<br>    [ v3_req ]中添加 subjectAltName = @alt_names<br>    添加标签：[alt_names]DNS.1=*.zy.com=》只有这个域名可以访问到代码<br><br>生成证书私钥test.key<br>    openssl genpkey -algorithm RSA -out test.key<br>生产证书请求文件test.csr<br> openssl req -new -nodes -key test.key -out test.csr -days 3650 -subj<br> &quot;/C=cn/OU=myorg/O=mycomp/CN=myname&quot; -config ./openssl.cnf -extensions v3_req<br>生成SAN证书pem<br>openssl x509 -req -days 365 -in test.csr -out test.pem -CA<br>server.crt -CAcreateserial -extfile ./openssl.cnf -extensions v3_req<br>改正版命令：<br>sudo openssl x509 -req -days 365 -in test.csr -out test.pem<br>-CA /usr/local/sdk/go/src/hello/key/server.crt<br>-CAkey /usr/local/sdk/go/src/hello/key/server.key<br>-CAcreateserial -extfile ./openssl.cnf -extensions v3_req<br><br><br></code></pre></td></tr></table></figure>
+
+<p>认证生成私钥证书文件命令在hello-server key 命令.txt文件中</p>
+<ul>
+<li><input disabled="" type="checkbox"> server端传入.key文件，.pem文件生成证书</li>
+<li><input disabled="" type="checkbox"> 在创建grpcserver时将证书塞进去</li>
+<li><input disabled="" type="checkbox"> client端传入.pem文件和域名生成证书</li>
+<li><input disabled="" type="checkbox"> 再获得conn连接时，塞入证书</li>
+</ul>
+<h4 id="Token认证"><a href="#Token认证" class="headerlink" title="Token认证"></a>Token认证</h4><ul>
+<li><input disabled="" type="checkbox"> 将客户端实现有关Token的接口：GetRequestMetadata →返回携带信息，RequireTransportSecurity→是否开启ssl</li>
+<li><input disabled="" type="checkbox"> 客户端获得携带ssl与token的切片</li>
+<li><input disabled="" type="checkbox"> server端在服务（不推荐）或者拦截器中校验token令牌</li>
+</ul>
+<p>可以与SSL&#x2F;TLS结合</p>
+<h1 id="go-zero基础"><a href="#go-zero基础" class="headerlink" title="go-zero基础"></a>go-zero基础</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3><p>将大系统按照功能或者产品进行服务拆分→独立的服务</p>
+<p>服务间通信→rpc通信连接</p>
+<h3 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h3><p>Etcd</p>
+<p>→是什么：etcd是一个高可用的分布式键值存储系统。采用Raft一致性算法保证数据的强一致性，并支持对数据进行监听更新。<br>→用途：微服务的配置中心，服务发现</p>
+<p>→理解：数据可靠性更强，加强版redis</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs text">etcd的基本命令  <br><br>1.etcdctl put name zy  <br><br>2.etcdctl get name-&gt;返回键值对  <br><br>3.etcdctl get name --print-value-only-&gt;只希望返回值  <br><br>4.etcdctl get na --prefix-&gt;返回前缀符合条件的键值对  <br><br>5.etcdctl watch name-&gt;监听键的变化  <br><br>6.etcdctl del name-&gt;删除键<br><br></code></pre></td></tr></table></figure>
+
+<p>命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">zsy@zsy-21CY:/usr/local/sdk/go/src/zero-study/user/rpc$ goctl rpc protoc user.proto --go_out=types --go-grpc_out=types --zrpc_out=.<br></code></pre></td></tr></table></figure>
+
+<p> goctl api go -api video&#x2F;api&#x2F;video.api -dir video&#x2F;api&#x2F;</p>
+<p class='item-img' data-src='https://secure2.wostatic.cn/static/uxivKuv5XgqMfLH7bzB9YS/image.png?auth_key=1705326337-3AXWtK28pjtqNyB3e35V7P-0-7827d0280129ad0a58ba5e10cfd75bd0'><img src="https://secure2.wostatic.cn/static/uxivKuv5XgqMfLH7bzB9YS/image.png?auth_key=1705326337-3AXWtK28pjtqNyB3e35V7P-0-7827d0280129ad0a58ba5e10cfd75bd0"></p>
+<h2 id="api服务"><a href="#api服务" class="headerlink" title="api服务"></a>api服务</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">api go -api xxx.api -<span class="hljs-built_in">dir</span> .<br></code></pre></td></tr></table></figure>
+
+<h3 id="api语法"><a href="#api语法" class="headerlink" title="api语法"></a>api语法</h3><p>syntax &#x3D; “v1”</p>
+<p>type :类似于结构体→请求体、响应体、实例</p>
+<ul>
+<li>支持结构体嵌套和引用</li>
+</ul>
+<p>service:定义微服务</p>
+<ul>
+<li>@handler 方法名</li>
+<li>请求方法 路由 请求、响应</li>
+</ul>
+<p>@server():控制对http服务生成时meta信息</p>
+<ul>
+<li>group:路由分组目录</li>
+<li>prefix:路由前缀</li>
+<li>jwt:鉴权Auth 值为 jwt 密钥，过期   等信息配置的 golang 结构体名称</li>
+</ul>
+<ol>
+<li>在user.yaml中配置秘钥与过期时间</li>
+</ol>
+<ul>
+<li>middleware:中间件</li>
+<li>timeout:3s超时控制，值为 time.Duration </li>
+<li>maxBytes: 最大请求控制</li>
+</ul>
+<h3 id="api封装"><a href="#api封装" class="headerlink" title="api封装"></a>api封装</h3><p>避免重复写响应体的重复字段信息。我们可以将 <code>code</code> 和 <code>msg</code> 抽象在 base.api 中，然后 user.api 中复用和定义具体的响应结构体即可。</p>
+<p>http服务→main.api→引入没有service块的api</p>
+<p>结构体→xxx.api</p>
+<h3 id="api命令"><a href="#api命令" class="headerlink" title="api命令"></a>api命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs Bash">goctl api new demo<br>goctl api go -api xxx.api -<span class="hljs-built_in">dir</span>. <br></code></pre></td></tr></table></figure>
+
+<p>类似的proto文件生成代码命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">goctl rpc new demo<br></code></pre></td></tr></table></figure>
+
+<p>但rpc需要在配置文件中添加代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Bash">`etc/demo.yaml：`<br>Name: demo.rpc<br>ListenOn: 0.0.0.0:8080<br>Mode: dev<br><br></code></pre></td></tr></table></figure>
+
+<p>api格式化命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">goctl api format —<span class="hljs-built_in">dir</span> demo.api<br></code></pre></td></tr></table></figure>
+
+<h3 id="jwt鉴权实现"><a href="#jwt鉴权实现" class="headerlink" title="jwt鉴权实现"></a>jwt鉴权实现</h3><ul>
+<li>@server(jwt:Auth)</li>
+<li>在xxx.yaml文件中配置秘钥以及有效期</li>
+<li>在公共目录中完成jwt的签发逻辑</li>
+<li>login后获得jwt签发的token，并返回</li>
+<li>在main函数中加入鉴权失败的回调函数，说明鉴权失败的原因。</li>
+</ul>
+<h2 id="操作mysql"><a href="#操作mysql" class="headerlink" title="操作mysql"></a>操作mysql</h2><h3 id="生成model代码"><a href="#生成model代码" class="headerlink" title="生成model代码"></a>生成model代码</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Bash">goctl model mysql ddl —src xx.sql —<span class="hljs-built_in">dir</span> .(有表)<br></code></pre></td></tr></table></figure>
+
+<p>→自动加入了增删改的代码</p>
+<p>→也可以自己添加手写sql</p>
+<h2 id="model代码使用"><a href="#model代码使用" class="headerlink" title="model代码使用"></a>model代码使用</h2><ul>
+<li>再config写上mysql配置→数据源</li>
+<li>在xxx.yaml文件中配置数据源</li>
+<li>在svn包里的创建mysql连接</li>
+<li>登录逻辑中可以查询数据库了</li>
+</ul>
+<h3 id="结合gorm"><a href="#结合gorm" class="headerlink" title="结合gorm"></a>结合gorm</h3><p>→开发更加高效</p>
+<ul>
+<li>在models创建type,引入gorm.Model（直接编写model文件）</li>
+<li>在common中加入初始化gorm的代码</li>
+<li>config.go中不变</li>
+<li>svc中连接mysql</li>
+<li>login逻辑中使用gorm</li>
+</ul>
+<h2 id="rpc服务"><a href="#rpc服务" class="headerlink" title="rpc服务"></a>rpc服务</h2><h3 id="单rpc服务模式"><a href="#单rpc服务模式" class="headerlink" title="单rpc服务模式"></a>单rpc服务模式</h3><p>编写一个proto文件在service块添加rpc→通过命令[goctl rpc protoc user.proto –go_out&#x3D;.&#x2F;types –go-grpc_out&#x3D;.&#x2F;types –zrpc_out&#x3D;.]生成对应的文件，其中rpc文件生成在types文件夹中→补充逻辑就行了</p>
+<h3 id="服务分组"><a href="#服务分组" class="headerlink" title="服务分组"></a>服务分组</h3><p>proto文件在不同的service块放不同的rpc服务→在命令后面加上-m</p>
+<h3 id="结合gorm-1"><a href="#结合gorm-1" class="headerlink" title="结合gorm"></a>结合gorm</h3><p>proto文件→命令→配置文件.yaml文件添加mysql数据库信息→config.go添加mysql映射→svc依赖注入mysql,初始化连接数据库→补充逻辑</p>
+<h2 id="结合api"><a href="#结合api" class="headerlink" title="结合api"></a>结合api</h2><p>api文件→命令goctl api go -api user.api -dir .</p>
+<p>配置文件里写rpc服务的key→填写配置文件→svc依赖注入rpc客户端→逻辑写一下。</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2024/01/15/Git%E6%93%8D%E4%BD%9C%E5%90%88%E8%BE%91/">← Next Git操作合辑</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/01/15/%E9%97%AE%E9%A2%98%E5%90%88%E8%BE%91/">项目实践 Prev →</a></div></div></div><div id="comments"><div class="selector"><button class="valine-sel"></button><button class="gitalk-sel"></button><button class="waline-sel"></button></div><div id="valine"></div><div id="gitalk"></div><div id="waline"></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Zy</a></h1><div id="description"><p>心有所向，无问东西</p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/2789459251"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" target="_blank" rel="noopener" href="https://space.bilibili.com/660370161?spm_id_from=333.1007.0.0"><i class="fa-brands fa-bilibili" alt="BiliBili"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#grpc"><span class="toc-number">1.</span> <span class="toc-text">grpc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#proto%E7%BA%A6%E6%9D%9F%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.</span> <span class="toc-text">proto约束文件介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#message%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.1.1.</span> <span class="toc-text">message关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">服务定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%BC%96%E5%86%99"><span class="toc-number">1.2.</span> <span class="toc-text">服务端编写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%BC%96%E5%86%99"><span class="toc-number">1.3.</span> <span class="toc-text">客户端编写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E8%AF%81-%E5%AE%89%E5%85%A8%E4%BC%A0%E8%BE%93"><span class="toc-number">1.4.</span> <span class="toc-text">认证-安全传输</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#SSL-TLS%E8%AE%A4%E8%AF%81"><span class="toc-number">1.4.0.1.</span> <span class="toc-text">SSL&#x2F;TLS认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Token%E8%AE%A4%E8%AF%81"><span class="toc-number">1.4.0.2.</span> <span class="toc-text">Token认证</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#go-zero%E5%9F%BA%E7%A1%80"><span class="toc-number">2.</span> <span class="toc-text">go-zero基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">2.1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.1.</span> <span class="toc-text">微服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E5%85%B7"><span class="toc-number">2.1.2.</span> <span class="toc-text">准备工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#api%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.2.</span> <span class="toc-text">api服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#api%E8%AF%AD%E6%B3%95"><span class="toc-number">2.2.1.</span> <span class="toc-text">api语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api%E5%B0%81%E8%A3%85"><span class="toc-number">2.2.2.</span> <span class="toc-text">api封装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#api%E5%91%BD%E4%BB%A4"><span class="toc-number">2.2.3.</span> <span class="toc-text">api命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jwt%E9%89%B4%E6%9D%83%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.2.4.</span> <span class="toc-text">jwt鉴权实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9Cmysql"><span class="toc-number">2.3.</span> <span class="toc-text">操作mysql</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90model%E4%BB%A3%E7%A0%81"><span class="toc-number">2.3.1.</span> <span class="toc-text">生成model代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#model%E4%BB%A3%E7%A0%81%E4%BD%BF%E7%94%A8"><span class="toc-number">2.4.</span> <span class="toc-text">model代码使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E5%90%88gorm"><span class="toc-number">2.4.1.</span> <span class="toc-text">结合gorm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rpc%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.5.</span> <span class="toc-text">rpc服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95rpc%E6%9C%8D%E5%8A%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.5.1.</span> <span class="toc-text">单rpc服务模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%88%86%E7%BB%84"><span class="toc-number">2.5.2.</span> <span class="toc-text">服务分组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E5%90%88gorm-1"><span class="toc-number">2.5.3.</span> <span class="toc-text">结合gorm</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%90%88api"><span class="toc-number">2.6.</span> <span class="toc-text">结合api</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main></body></html>
